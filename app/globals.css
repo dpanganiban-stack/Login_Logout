@@ -121,10 +121,20 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+
   html {
     @apply font-sans;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d7a4af 0%, #7d6aa0 45%, #6d8fb5 100%);
+  }
+}
+
+@layer components {
+  .login-shell {
+    background: linear-gradient(135deg, rgba(214, 158, 170, 0.9) 0%, rgba(119, 93, 150, 0.82) 48%, rgba(104, 144, 177, 0.82) 100%);
   }
 }
